@@ -1,0 +1,24 @@
+# generic stuff
+alias vi '/usr/bin/vim'
+alias g 'gvim -p'
+alias b 'cd ..'
+alias scsh 'source ~/.cshrc'
+alias gcsh 'gvim ~/.cshrc'
+
+# ls variation
+alias la 'ls -al --color=auto'
+alias lt 'ls -ltr'
+
+# grep variation
+alias grepsv "egrep --color --include='*.sv*'"
+alias grep "grep --color=auto"
+
+# make
+alias mk 'make | tee make.lg'
+
+# grid 
+alias lsq 'qstat -r | grep --color "Full jobname" -B1'
+alias crj 'qstat | grep -w r | wc -l'
+
+# VCS
+alias lcomp 'vcs -ntb_opts uvm-1.2 -debug_access+all -timescale=1ns/1ps -sverilog \!*'
